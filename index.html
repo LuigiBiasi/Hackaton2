@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <!-- Stylesheets -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles.css">
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        
+        <!-- tone.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/15.1.3/Tone.js" integrity="sha512-l/S587UA2X7JyCkDqZiEX+4OC6Hp8FC0PE1MFi3+KFLk3n1lxQAtSq8YTZ4ig2YFpJal2Jhz3H3iIFyv3KScFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <!-- CUstom script -->
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body class="d-flex justify-content-center align-items-center">
+        <div class="border rounded p-3 d-flex flex-column justify-content-center">
+            <div class="w-100 d-flex justify-content-start mb-3">
+                <button class="btn btn-primary me-3" id="play">Play</button>
+                <button class="btn btn-danger" id="stop">Stop</button>
+            </div>
+            <!-- Mixer -->
+            <table class="table-bordered border-secondary rounded">
+                <tr class="sliders">
+                    <td class="text-center">
+                        <input id="kick" type="range" min="0" max="1" step="0.01" value="1">
+                    </td>
+                    <td class="text-center">
+                        <input id="snare" type="range" min="0" max="1" step="0.01" value="1">
+                    </td>
+                    <td class="text-center">
+                        <input id="hats" type="range" min="0" max="1" step="0.01" value="1">
+                    </td>
+                    <td class="text-center">
+                        <input id="piano" type="range" min="0" max="1" step="0.01" value="1">
+                    </td>
+                    <td class="text-center">
+                        <input id="bass" type="range" min="0" max="1" step="0.01" value="1">
+                    </td>
+                    <td class="text-center">
+                        <input type="range" min="0" max="1" step="0.01" value="1" disabled>
+                    </td>
+                </tr>
+                <tr class="labels fw-bold">
+                    <td class="text-center">Kick</td>
+                    <td class="text-center">Snare</td>
+                    <td class="text-center">Hats</td>
+                    <td class="text-center">Piano</td>
+                    <td class="text-center">Bass</td>
+                    <td class="text-center">Synth</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

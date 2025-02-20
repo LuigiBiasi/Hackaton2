@@ -1,0 +1,9 @@
+input[type=range] {
+    writing-mode: vertical-lr;
+    direction: rtl;
+    vertical-align: middle;
+}
+
+.sliders > td {
+    min-width: 50px;
+}
